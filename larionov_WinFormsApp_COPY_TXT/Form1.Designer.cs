@@ -31,6 +31,8 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.buttonSendText = new System.Windows.Forms.Button();
             this.buttonExit = new System.Windows.Forms.Button();
+            this.label_output = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // textBox1
@@ -61,11 +63,33 @@
             this.buttonExit.UseVisualStyleBackColor = true;
             this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
             // 
+            // label_output
+            // 
+            this.label_output.AutoSize = true;
+            this.label_output.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label_output.Location = new System.Drawing.Point(12, 9);
+            this.label_output.Name = "label_output";
+            this.label_output.Size = new System.Drawing.Size(0, 15);
+            this.label_output.TabIndex = 3;
+            this.label_output.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(38, 15);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "label1";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(729, 450);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.label_output);
             this.Controls.Add(this.buttonExit);
             this.Controls.Add(this.buttonSendText);
             this.Controls.Add(this.textBox1);
@@ -84,5 +108,7 @@
         private TextBox textBox1;
         private Button buttonSendText;
         private Button buttonExit;
+        private Label label_output;
+        private Label label1;
     }
 }
