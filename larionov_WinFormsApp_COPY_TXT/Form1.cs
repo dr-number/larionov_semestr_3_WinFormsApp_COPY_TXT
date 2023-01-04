@@ -20,11 +20,18 @@ namespace larionov_WinFormsApp_COPY_TXT
         private void buttonSendText_Click(object sender, EventArgs e)
         {
             textBox_output.Text += textBox1.Text + "\n";
+            textBox1.Text = "";
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void textBox1_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter) 
+                buttonSendText.PerformClick();
         }
     }
 }
