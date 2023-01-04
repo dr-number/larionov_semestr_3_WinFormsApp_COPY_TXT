@@ -32,7 +32,7 @@
             this.buttonSendText = new System.Windows.Forms.Button();
             this.buttonExit = new System.Windows.Forms.Button();
             this.label_output = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.textBox_output = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // textBox1
@@ -73,22 +73,22 @@
             this.label_output.TabIndex = 3;
             this.label_output.Click += new System.EventHandler(this.label1_Click);
             // 
-            // label1
+            // textBox_output
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(12, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 15);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "label1";
+            this.textBox_output.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.textBox_output.Location = new System.Drawing.Point(12, 6);
+            this.textBox_output.Multiline = true;
+            this.textBox_output.Name = "textBox_output";
+            this.textBox_output.ReadOnly = true;
+            this.textBox_output.Size = new System.Drawing.Size(707, 382);
+            this.textBox_output.TabIndex = 5;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(729, 450);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.textBox_output);
             this.Controls.Add(this.label_output);
             this.Controls.Add(this.buttonExit);
             this.Controls.Add(this.buttonSendText);
@@ -109,6 +109,6 @@
         private Button buttonSendText;
         private Button buttonExit;
         private Label label_output;
-        private Label label1;
+        private TextBox textBox_output;
     }
 }
