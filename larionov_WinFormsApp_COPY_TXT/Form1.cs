@@ -19,8 +19,14 @@ namespace larionov_WinFormsApp_COPY_TXT
 
         private void buttonSendText_Click(object sender, EventArgs e)
         {
-            textBox_output.Text += textBox1.Text + "\n";
-            textBox1.Text = "";
+            if (textBox1.Text != "")
+            {
+                listBox_output.Items.Add(textBox1.Text);
+                textBox1.Text = "";
+                label_info.Text = "";
+            }
+            else
+                label_info.Text = "Вы забыли ввести текст";
         }
 
         private void label1_Click(object sender, EventArgs e)

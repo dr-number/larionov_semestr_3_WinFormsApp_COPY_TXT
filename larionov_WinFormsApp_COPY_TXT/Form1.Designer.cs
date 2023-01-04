@@ -32,7 +32,8 @@
             this.buttonSendText = new System.Windows.Forms.Button();
             this.buttonExit = new System.Windows.Forms.Button();
             this.label_output = new System.Windows.Forms.Label();
-            this.textBox_output = new System.Windows.Forms.TextBox();
+            this.label_info = new System.Windows.Forms.Label();
+            this.listBox_output = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // textBox1
@@ -74,22 +75,32 @@
             this.label_output.TabIndex = 3;
             this.label_output.Click += new System.EventHandler(this.label1_Click);
             // 
-            // textBox_output
+            // label_info
             // 
-            this.textBox_output.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.textBox_output.Location = new System.Drawing.Point(12, 6);
-            this.textBox_output.Multiline = true;
-            this.textBox_output.Name = "textBox_output";
-            this.textBox_output.ReadOnly = true;
-            this.textBox_output.Size = new System.Drawing.Size(707, 382);
-            this.textBox_output.TabIndex = 5;
+            this.label_info.AutoSize = true;
+            this.label_info.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label_info.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label_info.Location = new System.Drawing.Point(14, 388);
+            this.label_info.Name = "label_info";
+            this.label_info.Size = new System.Drawing.Size(0, 15);
+            this.label_info.TabIndex = 6;
+            // 
+            // listBox_output
+            // 
+            this.listBox_output.FormattingEnabled = true;
+            this.listBox_output.ItemHeight = 15;
+            this.listBox_output.Location = new System.Drawing.Point(12, 12);
+            this.listBox_output.Name = "listBox_output";
+            this.listBox_output.Size = new System.Drawing.Size(705, 364);
+            this.listBox_output.TabIndex = 7;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(729, 450);
-            this.Controls.Add(this.textBox_output);
+            this.Controls.Add(this.listBox_output);
+            this.Controls.Add(this.label_info);
             this.Controls.Add(this.label_output);
             this.Controls.Add(this.buttonExit);
             this.Controls.Add(this.buttonSendText);
@@ -110,6 +121,7 @@
         private Button buttonSendText;
         private Button buttonExit;
         private Label label_output;
-        private TextBox textBox_output;
+        private Label label_info;
+        private ListBox listBox_output;
     }
 }
