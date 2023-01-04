@@ -6,5 +6,10 @@ namespace larionov_WinFormsApp_COPY_TXT
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
