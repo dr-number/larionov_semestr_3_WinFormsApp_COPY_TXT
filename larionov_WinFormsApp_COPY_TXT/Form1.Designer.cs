@@ -37,6 +37,7 @@
             // 
             this.textBox1.Location = new System.Drawing.Point(12, 415);
             this.textBox1.Name = "textBox1";
+            this.textBox1.PlaceholderText = "Введите текст...";
             this.textBox1.Size = new System.Drawing.Size(493, 23);
             this.textBox1.TabIndex = 0;
             // 
@@ -66,6 +67,7 @@
             this.Controls.Add(this.buttonExit);
             this.Controls.Add(this.buttonSendText);
             this.Controls.Add(this.textBox1);
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "COPY.TXT Ларионов гр. 210з";
             this.Load += new System.EventHandler(this.Form1_Load);
