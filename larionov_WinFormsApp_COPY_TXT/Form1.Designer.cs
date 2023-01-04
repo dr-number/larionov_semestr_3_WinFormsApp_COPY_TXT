@@ -49,6 +49,7 @@
             this.buttonSendText.TabIndex = 1;
             this.buttonSendText.Text = "Отправить текст";
             this.buttonSendText.UseVisualStyleBackColor = true;
+            this.buttonSendText.Click += new System.EventHandler(this.buttonSendText_Click);
             // 
             // buttonExit
             // 
@@ -58,6 +59,7 @@
             this.buttonExit.TabIndex = 2;
             this.buttonExit.Text = "Выйти";
             this.buttonExit.UseVisualStyleBackColor = true;
+            this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
             // 
             // Form1
             // 
@@ -67,6 +69,7 @@
             this.Controls.Add(this.buttonExit);
             this.Controls.Add(this.buttonSendText);
             this.Controls.Add(this.textBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "COPY.TXT Ларионов гр. 210з";

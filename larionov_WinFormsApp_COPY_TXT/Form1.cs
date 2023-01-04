@@ -11,5 +11,15 @@ namespace larionov_WinFormsApp_COPY_TXT
         {
 
         }
+
+        private void buttonExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void buttonSendText_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
